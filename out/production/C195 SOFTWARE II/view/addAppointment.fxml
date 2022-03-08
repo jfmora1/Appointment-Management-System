@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="575.0" prefWidth="675.0" style="-fx-background-color: #7D9393;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddAppointment">
+   <children>
+      <Label layoutX="237.0" layoutY="14.0" text="CREATE APPOINTMENT">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="67.0" text="Appointment ID" />
+      <Label layoutX="14.0" layoutY="137.0" text="Title" />
+      <Label layoutX="14.0" layoutY="210.0" text="Description" />
+      <Label layoutX="14.0" layoutY="279.0" text="Location" />
+      <Label layoutX="16.0" layoutY="361.0" text="Contact" />
+      <Label layoutX="23.0" layoutY="427.0" text="Type" />
+      <DatePicker fx:id="datePicker" layoutX="438.0" layoutY="63.0" />
+      <Label layoutX="364.0" layoutY="67.0" text="Date" />
+      <Label layoutX="363.0" layoutY="180.0" text="Time" />
+      <ComboBox fx:id="fromTime" layoutX="438.0" layoutY="176.0" onAction="#fromSelectedtime" prefWidth="150.0" />
+      <Label layoutX="349.0" layoutY="247.0" text="Customer ID" />
+      <Label layoutX="370.0" layoutY="304.0" text="User ID" />
+      <ComboBox fx:id="contact" layoutX="126.0" layoutY="357.0" prefWidth="150.0" />
+      <TextField fx:id="appointmentID" disable="true" editable="false" layoutX="127.0" layoutY="63.0" />
+      <TextField fx:id="title" layoutX="127.0" layoutY="133.0" />
+      <TextField fx:id="description" layoutX="127.0" layoutY="206.0" />
+      <TextField fx:id="location" layoutX="126.0" layoutY="275.0" />
+      <TextField fx:id="type" layoutX="127.0" layoutY="423.0" />
+      <TextField fx:id="userID" disable="true" editable="false" layoutX="438.0" layoutY="300.0" />
+      <Button fx:id="saveButton" layoutX="438.0" layoutY="521.0" mnemonicParsing="false" onAction="#saveAppointment" text="Save" />
+      <Button fx:id="cancelButton" layoutX="548.0" layoutY="521.0" mnemonicParsing="false" onAction="#cancelAppointmentCreate" text="Cancel" />
+      <Label layoutX="456.0" layoutY="150.0" text="1 Hour Appointments" />
+      <ComboBox fx:id="customerIdBox" layoutX="439.0" layoutY="243.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
